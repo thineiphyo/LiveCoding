@@ -31,7 +31,7 @@ namespace ProjectToDoList.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutToDoTaskDetail(int Id, ToDoTask toDoTask)
+        public async Task<IActionResult> PutToDoTask(int Id, ToDoTask toDoTask)
         {
             if (Id != toDoTask.Id)
             {
@@ -40,6 +40,26 @@ namespace ProjectToDoList.Controllers
             var res= await  _ToDoTaskRepository.UpdateToDoTask(toDoTask);   
             return Ok(res);
         }
+
+        [HttpPut("{id}/CompletePercent/{completePercent}")]
+        public async Task<IActionResult> PutToDoTaskPercent(int Id, int CompletePercent)
+        {
+            if (CompletePercent<0 || CompletePercent>100)
+            {
+                ModelState.AddModelError("CompletePercent", "Invalid Input");
+                return BadRequest(ModelState);
+            }
+            var toDoTask = await _ToDoTaskRepository.GetToDoTask(Id);
+            toDoTask.CompletePercent = CompletePercent;
+            toDoTask.IsCompleted = false;
+            if (CompletePercent == 100)
+            {
+                toDoTask.IsCompleted = true;
+            }
+            var res = await _ToDoTaskRepository.UpdateToDoTask(toDoTask);
+            return Ok(res);
+        }
+        
 
         [HttpPost]
         public async Task<ActionResult<ToDoTask>> PostToDoTaskDetail([FromBody] ToDoTask toDoTask)

@@ -22,7 +22,10 @@ namespace ProjectToDoList.Models
 
         [Required]
         public DateTime ExpireDate { get; set; }
+        [Range(0,100)]
         public int CompletePercent { get; set; }
+
+        public bool IsCompleted { get; set; }
 
     }
 }

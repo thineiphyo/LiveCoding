@@ -9,6 +9,7 @@ namespace ProjectToDoList.Repository
     public interface IToDoTaskRepository
     {
         public Task<IQueryable<ToDoTask>> GetToDoTasks();
+        public  Task<ToDoTask> GetToDoTask(int id);
         public bool IsDuplicateTasks(string Title);
 
         public Task<ToDoTask> CreateToDoTask(ToDoTask toDoTask);
