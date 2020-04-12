@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNet.OData;
+using Microsoft.AspNet.OData.Query;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using ProjectToDoList.Models;
@@ -25,12 +27,20 @@ namespace ProjectToDoList.Controllers
         }
      
         [HttpGet]
+        [EnableQuery(AllowedLogicalOperators = AllowedLogicalOperators.All)]
+        //Get Specific Todo
+        // http://localhost:50231/api/ToDoTask?$filter=id eq 4
+        //Today
+        //http://localhost:50231/api/ToDoTask?$filter=expireDate eq 2020-10-03
+        //week
+        //http://localhost:50231/api/ToDoTask?$filter=expireDate gt 2020-10-03 and expireDate lt 2020-10-06
         public async Task<IQueryable<ToDoTask>> GetToDoList()
         {
             return  await  _ToDoTaskRepository.GetToDoTasks();
         }
 
-        [HttpPut("{id}")]
+       // [HttpPut("{id}")]
+       [HttpPut]
         public async Task<IActionResult> PutToDoTask(int Id, ToDoTask toDoTask)
         {
             if (Id != toDoTask.Id)
@@ -62,6 +72,7 @@ namespace ProjectToDoList.Controllers
         
 
         [HttpPost]
+        // date format is ISO date "expireDate": "2020-04-15T00:00:00",
         public async Task<ActionResult<ToDoTask>> PostToDoTaskDetail([FromBody] ToDoTask toDoTask)
         {
          
@@ -81,7 +92,8 @@ namespace ProjectToDoList.Controllers
         }
 
       
-        [HttpDelete("{id}")]
+       // [HttpDelete("{id}")]
+       [HttpDelete]
         public async Task<ActionResult<ToDoTask>> DeleteToDoTask(int id)
         {
            if( _ToDoTaskRepository.ToDoTaskExists(id))

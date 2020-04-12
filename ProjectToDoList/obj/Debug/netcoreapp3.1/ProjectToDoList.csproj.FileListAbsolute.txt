@@ -252,11 +252,15 @@ C:\Users\thinei\Desktop\2020Run_Thin\New folder\LiveCoding\ProjectToDoList\bin\D
 C:\Users\thinei\Desktop\2020Run_Thin\New folder\LiveCoding\ProjectToDoList\obj\Debug\netcoreapp3.1\ProjectToDoList.csprojAssemblyReference.cache
 C:\Users\thinei\Desktop\2020Run_Thin\New folder\LiveCoding\ProjectToDoList\obj\Debug\netcoreapp3.1\staticwebassets\ProjectToDoList.StaticWebAssets.Manifest.cache
 C:\Users\thinei\Desktop\2020Run_Thin\New folder\LiveCoding\ProjectToDoList\obj\Debug\netcoreapp3.1\staticwebassets\ProjectToDoList.StaticWebAssets.xml
-C:\Users\thinei\Desktop\2020Run_Thin\New folder\LiveCoding\ProjectToDoList\obj\Debug\netcoreapp3.1\ProjectToDoList.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\thinei\Desktop\2020Run_Thin\New folder\LiveCoding\ProjectToDoList\obj\Debug\netcoreapp3.1\ProjectToDoList.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\thinei\Desktop\2020Run_Thin\New folder\LiveCoding\ProjectToDoList\obj\Debug\netcoreapp3.1\ProjectToDoList.AssemblyInfoInputs.cache
 C:\Users\thinei\Desktop\2020Run_Thin\New folder\LiveCoding\ProjectToDoList\obj\Debug\netcoreapp3.1\ProjectToDoList.AssemblyInfo.cs
 C:\Users\thinei\Desktop\2020Run_Thin\New folder\LiveCoding\ProjectToDoList\obj\Debug\netcoreapp3.1\ProjectToDoList.RazorTargetAssemblyInfo.cache
 C:\Users\thinei\Desktop\2020Run_Thin\New folder\LiveCoding\ProjectToDoList\obj\Debug\netcoreapp3.1\ProjectToDoList.csproj.CopyComplete
 C:\Users\thinei\Desktop\2020Run_Thin\New folder\LiveCoding\ProjectToDoList\obj\Debug\netcoreapp3.1\ProjectToDoList.dll
 C:\Users\thinei\Desktop\2020Run_Thin\New folder\LiveCoding\ProjectToDoList\obj\Debug\netcoreapp3.1\ProjectToDoList.pdb
+C:\Users\thinei\Desktop\2020Run_Thin\New folder\LiveCoding\ProjectToDoList\obj\Debug\netcoreapp3.1\ProjectToDoList.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\thinei\Desktop\2020Run_Thin\New folder\LiveCoding\ProjectToDoList\obj\Debug\netcoreapp3.1\ProjectToDoList.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\thinei\Desktop\2020Run_Thin\New folder\LiveCoding\ProjectToDoList\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.OData.dll
+C:\Users\thinei\Desktop\2020Run_Thin\New folder\LiveCoding\ProjectToDoList\bin\Debug\netcoreapp3.1\Microsoft.OData.Core.dll
+C:\Users\thinei\Desktop\2020Run_Thin\New folder\LiveCoding\ProjectToDoList\bin\Debug\netcoreapp3.1\Microsoft.OData.Edm.dll
+C:\Users\thinei\Desktop\2020Run_Thin\New folder\LiveCoding\ProjectToDoList\bin\Debug\netcoreapp3.1\Microsoft.Spatial.dll
